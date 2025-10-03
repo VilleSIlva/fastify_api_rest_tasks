@@ -1,9 +1,11 @@
 import fastify from 'fastify'
+import { knex } from './database'
 
 const app = fastify()
 
-app.get('/status', () => {
-  return 'hello world'
+app.get('/status', async () => {
+  const transaction = await knex('transactions').select('*')
+  return transaction
 })
 
 app
