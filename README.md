@@ -13,3 +13,12 @@
 - [] O usuário só pode visualizar transações que ele criou;
 
 
+# Regras Não Funcionais
+- Node
+- Typescript
+- Fastify
+- sqlite3
+- knex
+- fastify/cookies
+- vitest
+- 
