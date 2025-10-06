@@ -1,0 +1,115 @@
+type: collection.insomnia.rest/5.0
+name: Task Api Fastify Rest
+meta:
+  id: wrk_d071190fb43b4f49af0dc446f2445558
+  created: 1759515437505
+  modified: 1759515472809
+  description: ""
+collection:
+  - url: http://localhost:3333/transactions
+    name: Create Transactions
+    meta:
+      id: req_1fa85c81edd148a5960164b27ed89581
+      created: 1759515437563
+      modified: 1759755169903
+      isPrivate: false
+      description: ""
+      sortKey: -1759515437564
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title":"Criacao de sites",
+        	"amount":8.0000,
+        	"type":"credit"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/transactions
+    name: Get Transactions
+    meta:
+      id: req_aaa1f0fb0b3b431cb3e19e9d354c8ec3
+      created: 1759523036317
+      modified: 1759523088094
+      isPrivate: false
+      description: ""
+      sortKey: -1759523036317
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/transactions/71816640-e48d-4240-a7a4-c05d7e70e2ac
+    name: Get Transaction
+    meta:
+      id: req_f4bf554a5c174e70a688bbf40501d4f5
+      created: 1759524441109
+      modified: 1759524514269
+      isPrivate: false
+      description: ""
+      sortKey: -1759524441109
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/transactions/sumary
+    name: Get Sumary
+    meta:
+      id: req_1a26f6ad52774ae99410dc5006536d40
+      created: 1759524520745
+      modified: 1759524550349
+      isPrivate: false
+      description: ""
+      sortKey: -1759524520745
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_30d220b116524c8488b620a1f3a65dfb4a478d94
+    created: 1759515437509
+    modified: 1759751678263
+environments:
+  name: Base Environment
+  meta:
+    id: env_30d220b116524c8488b620a1f3a65dfb4a478d94
+    created: 1759515437507
+    modified: 1759515437507
+    isPrivate: false
